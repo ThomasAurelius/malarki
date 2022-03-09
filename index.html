@@ -11,13 +11,13 @@
    <link rel="stylesheet" href="css/style.css">
    
 
-   <title>Loruki</title>
+   <title>Malarki</title>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
       <div class="container flex">
-         <h1 class="logo">Loruki</h1>
+         <h1 class="logo">Malarki</h1>
          <nav>
             <ul>
                <li><a href="index.html">Home</a></li>
@@ -40,15 +40,18 @@
 
             <div class="showcase-form card">
                <h2>Request a Demo</h2>
-               <form name ='contact'>
+               <form action="https://formsubmit.co/bdf7ccf14a873811dc5164afc7ddfd8e" method="POST">
+                  <input type="hidden" name="form-name" value="contact">
+                  <p class="hidden">
+                     <label>Don't fill this out if youre human: <input name="bot-field"/></label>
+                  </p>
                   <div class="form-control">
                      <input type="text" name="name" placeholder="Name" required>
                   </div>
+                  <input type="email" name="email" placeholder="Email" required>
                   <div class="form-control">
-                     <input type="text" name="company" placeholder="Company Name" required>
-                  </div>
-                  <div class="form-control">
-                     <input type="email" name="email" placeholder="Email" required>
+                     
+                     <input type="text" name="message" placeholder="Message" required>
                      <input type="submit" value="Send" class="btn btn-primary">
                   </div>
                </form>
@@ -68,17 +71,20 @@
           <div class="grid grid-3 text-center my-4">
              <div>
                 <i class="fas fa-server fa-3x"></i>
-                <h3>100,309,405</h3>
+               <div class="counter" data-target="100309405"></div>
+                <!-- <h3>100,309,405</h3> -->
                 <p class="text-secondary">Deployments</p>
              </div>
              <div>
                <i class="fas fa-upload fa-3x"></i>
-               <h3>987 TB</h3>
-               <p class="text-secondary">Published</p>
+               <!-- <h3>987 TB</h3> -->
+               <div class="counter" data-target="987"></div>
+               <p class="text-secondary">Published TB</p>
              </div>
              <div>
                <i class="fas fa-project-diagram fa-3x"></i>
-               <h3>2,343,265</h3>
+               <!-- <h3>2,343,265</h3> -->
+               <div class="counter" data-target="2343265"></div>
                <p class="text-secondary">Projects</p>
              </div>
           </div>
@@ -89,7 +95,7 @@
     <!-- Cli -->
     <section class="cli">
        <div class="container grid">
-          <img src="images/cli.png" alt="">
+         <pre><code>$ brew install malarki-cli</code></pre>
           <div class="card">
             <h3>Easy to use cross platform CLI</h3>
          </div>
@@ -104,7 +110,7 @@
       <div class="container grid">
          <div class="text-center">
             <h2 class="lg">Extreme Cloud Hosting</h2>
-            <p class="lead my-1">Could Hosting like youve never seen. Fast, Efficient and Scalable</p>
+            <p class="lead my-1">Cloud Hosting like you've never seen. Fast, Efficient and Scalable</p>
             <a href="features.html" class="btn btn-dark">Read More</a>
          </div>
          <img src="images/cloud.png" alt="">
@@ -136,7 +142,7 @@
          </div>
          <div class="card">
             <h4>PHP</h4>
-            <img src="images/logos/PHP.png" alt="">
+            <img src="images/logos/php.png" alt="">
          </div>
          <div class="card">
             <h4>Scala</h4>
@@ -144,7 +150,7 @@
          </div>
          <div class="card">
             <h4>Clojure</h4>
-            <img src="images/logos/Clojure.png" alt="">
+            <img src="images/logos/clojure.png" alt="">
          </div>
        
        </div>
@@ -154,7 +160,7 @@
     <footer class="footer bg-dark py-5">
        <div class="container grid grid-3">
           <div>
-             <h1>Loruki</h1>
+             <h1>Malarki</h1>
              <p>Copyright &copy 2021</p>
           </div>
           <nav>
@@ -173,5 +179,6 @@
           </div>
        </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
